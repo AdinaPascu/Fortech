@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="formstyle.css">
+</head>
+<body>
+		<div class="issueForm">
+			<h2>Subtask form</h2>
+			<div>
+				<div>Id</div>
+				<input type="text" class="issueId" disabled="disabled">
+			</div>
+			<div>
+				<div>Type</div>
+				<select class="issueType">
+					<option class="feature" value="feature">Feature</option>
+					<option class="bug" value="bug">Bug</option>
+					<option class="task" value="task">Task</option>
+				</select>
+			</div>
+			<div>
+				<div>Name</div>
+				<input type="text" class="issueName">
+			</div>
+			<div>
+				<div>Sprint</div>
+				<div>
+					<input type="text" class="issueSprint">
+					<div class="sprintsList"></div>
+				</div>
+			</div>
+			<div>
+				<div>Created By</div>
+				<input type="text" class="issueCreatedBy" disabled="disabled">
+			</div>
+			<div>
+				<div>Assignee</div>
+				<select class="issueAssignee">
+					<option value=""></option>
+				</select>
+			</div>
+			<div>
+				<div>Description</div>
+				<textarea class="issueDescription" rows="6" cols="30"></textarea>
+			</div>
+			<div>
+				<div>Status</div>
+				<select class="issueStatus" disabled="disabled">
+					<option value="0">New</option>
+					<option value="1">In Progress</option>
+					<option value="2">Feedback</option>
+					<option value="3">Rework</option>
+					<option value="4">Resolved</option>
+					<option value="5">Ready for testing</option>
+				</select>
+			</div>
+			<div class="issueTasks">
+				<div>Tasks</div>
+				<div class="tasks"></div>
+				<button class="addTask">Add Task</button>
+			</div>
+			<div class="issueComments">
+				<div>Comments</div>
+				<textarea class="commentText" rows="6" cols="30"></textarea>
+				<div class="comments"></div>
+			</div>
+			<div>
+				<div>Created at</div>
+				<input type="text" class="issueCreatedAt" disabled="disabled">
+			</div>
+			<div>
+				<div>Updated at</div>
+				<input type="text" class="issueUpdatedAt" disabled="disabled">
+			</div>
+			<div>
+				<button class="saveIssue">Save</button>
+				<button class="update">Update</button>
+				<button class="cancelIssue">Cancel</button>
+			</div>
+		</div>
+		<script src="storage.js"></script>
+		<script src="utils.js"></script>
+		<script src="Models/Sprints.js"></script>
+		<script src="views/sprints.js"></script>
+		<script src="Models/Issue.js"></script>
+		<script src="views/issue.js"></script>
+		<script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Awesome project</h1>
+	<div class="form">
+		<div>
+			<input type="text" name="username" placeholder="Username">
+		</div>
+		<div>
+			<button id="login">Login</button>
+			<button id="create">Create new user</button>
+		</div>
+	</div>
+	<div>
+		<button id="addIssue">New issue</button>
+		<button id="filter">Filter</button>
+	</div>
+	<div class="filterDiv">
+		<div>
+			<div>
+				<div>Sprint</div>
+				<div class="sprintBtn">
+					
+				</div>
+			</div>
+			<div>
+				<div>Status</div>
+				<div class="statusBtn">
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="sprintDiv">
+			<div class="sprint hide">
+				<div class="sprintName"></div>
+				<div class="sprintHead">
+						<div class="features">
+							<div>Features</div>
+							<div>
+								<div class="new"></div>
+								<div class="inProgress"></div>
+								<div class="feedback"></div>
+								<div class="rework"></div>
+								<div class="resolved"></div>
+								<div class="readyForTesting"></div>
+							</div>
+						</div>
+						<div class="bugs">
+							<div>Bugs</div>
+							<div>
+								<div class="new"></div>
+								<div class="inProgress"></div>
+								<div class="feedback"></div>
+								<div class="rework"></div>
+								<div class="resolved"></div>
+								<div class="readyForTesting"></div>
+							</div>
+						</div>
+						<div class="tasks">
+							<div>Tasks</div>
+							<div>
+								<div class="new"></div>
+								<div class="inProgress"></div>
+								<div class="feedback"></div>
+								<div class="rework"></div>
+								<div class="resolved"></div>
+								<div class="readyForTesting"></div>
+							</div>
+					</div>
+				</div>
+				<div class="sprintExpand">+</div>
+				<div class="sprintConstrain hide">-</div>
+			</div>
+		</div>
+		<table class="issuesList hide">
+			<tr class="head">
+				<th>Name</th>
+				<th>Type</th>
+				<th>Created By</th>
+				<th>Assignee</th>
+				<th>Status</th>
+				<th>Created At</th>
+				<th>Updated At</th>
+				<th></th>
+			</tr>
+			<tr class="issue hide">
+				<th class="name"></th>
+				<th class="type"></th>
+				<th class="createdBy"></th>
+				<th class="assignee"></th>
+				<th class="status"></th>
+				<th class="createdAt"></th>
+				<th class="updatedAt"></th>
+				<th class="btn"><img class="updateIssue" src="update.png"></th>
+			</tr>
+		</table>
+	</div>
+	<script src="storage.js"></script>
+	<script src="utils.js"></script>
+	<script src="Models/Users.js"></script>
+	<script src="views/users.js"></script>
+	<script src="Models/Issue.js"></script>
+	<script src="Models/Models.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
